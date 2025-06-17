@@ -173,6 +173,14 @@ aside,
     box-sizing: border-box;
 }
 
+main,
+aside,
+.tabs-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px 50px;
+}
+
 :root {
     --color-1: #FCA424;
     --color-2: #0DD39D;
@@ -392,7 +400,7 @@ button {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    margin-left: -2%;
+
 }
 
 .tabs-container {
@@ -473,7 +481,7 @@ button {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    margin-left: -2%;
+
 }
 
 .person-info {
@@ -500,4 +508,130 @@ button {
     color: white;
     font-weight: 500;
     padding: 30px 40px;
+}
+
+.tab-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    grid-column: 4 / -1;
+    border-bottom: 3px solid black;
+    padding-left: 20px;
+    border-left: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding: 10px 20px;
+}
+
+.tabs ul {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    width: 100%;
+}
+
+.btn-sm-secondary {
+    flex-basis: 100px;
+    color: white;
+    gap: 5px;
+    padding: 8px 0px;
+    background-color: var(--color-2);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.tabs ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    color: gray;
+    position: relative;
+}
+
+.active {
+    color: #1A1A1A !important;
+}
+
+aside {
+    grid-column: 1 / 4;
+    padding-right: 20px;
+}
+
+.aside-heading {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+    padding: 10px 0px;
+}
+
+.aside-title {
+    font-weight: 400;
+    color: #1A1A1A;
+}
+
+
+
+.label {
+    color: gray;
+    margin: 10px 0px;
+    margin-top: 15px;
+    margin-bottom: 17px;
+}
+
+.label-sm {
+    font-weight: 500;
+    font-size: 12px;
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.status-section {
+    grid-column: 4/-1;
+}
+
+.status-card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.person-img-sm {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.text-big {
+    font-size: 4rem;
+}
+
+.status-card {
+    grid-column: span 4;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    grid-template-columns: repeat(12, 1fr);
 }

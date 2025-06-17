@@ -19,6 +19,19 @@
       crossorigin="anonymous"
     ></script>
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+      class=""
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -77,23 +90,28 @@
         </di>
       </div>
     </header>
-    <div class="tabs-container">
-      <ul class="tabs">
-        <li class="tab"><i></i><a href="">DASHBOARD</a></li>
-        <li class="tab"><a href="" class="text-md">NEW CLAIMS</a></li>
-        <li class="tab"><a href="" class="text-md">COMPLETED CLAIMS</a></li>
-        <li class="tab"><a href="" class="text-md">PAST CLAIMS</a></li>
-        <li class="tab"><a href="" class="text-md">MEMBERS</a></li>
-        <li class="tab"><a href="" class="text-md">MY CLAIMS</a></li>
-        <button class="btn-secondary-md">Claim</button>
-      </ul>
+    <div class="tab-container">
+      <div class="tabs">
+        <ul>
+          <li class="active">
+            <i class="ph-fill ph-house-line"></i> DASHBOARD
+          </li>
+          <li>NEW CLAIMS</li>
+          <li>COMPLETED CLAIMS</li>
+          <li>MEMBERS</li>
+          <li>MY CLAIMS</li>
+        </ul>
+        <button class="btn-sm-secondary">
+          <i class="ph ph-money-wavy"></i>CLAIM
+        </button>
+      </div>
     </div>
     <div class="grid-container">
       <aside>
         <section class="about-family">
           <div class="aside-heading">
             <h3 class="aside-title">ABOUT MY FAMILY</h3>
-            <i class="aside-icon"></i>
+            <i class="ph ph-dots-three-outline"></i>
           </div>
           <p class="label">COVERED PERSONS</p>
           <div class="persons-container covered-persons">
@@ -151,7 +169,7 @@
         <section class="about-me">
           <div class="aside-heading">
             <h3 class="aside-title">ABOUT ME</h3>
-            <i class="aside-icon"></i>
+            <i class="ph ph-dots-three-outline"></i>
           </div>
           <p class="label-sm">EMAIL</p>
           <p>dburada367@gmail.com</p>
@@ -169,11 +187,16 @@
           <section class="status-section">
             <div class="status-card">
               <h2 class="text-big">23</h2>
+              <div class="line"></div>
               <p class="text-md">NEW CLAIMS</p>
               <div class="person-images">
-                <img src="" alt="" class="person-img-sm" />
-                <img src="" alt="person-img-sm" />
-                <img src="" alt="person-img-sm" />
+                <img
+                  src="./assets/images/person/1.jpg"
+                  alt=""
+                  class="person-img-sm"
+                />
+                <img src="./assets/images/person/2.jpg" class="person-img-sm" />
+                <img src="./assets/images/person/3.jpg" class="person-img-sm" />
                 <div class="avtar-count"></div>
               </div>
             </div>
@@ -191,12 +214,14 @@
 
             <div class="status-card">
               <h2 class="text-big">102</h2>
-              <p class="text-md">TOTAL CLAIMS</p>
-              <div class="person-images">
-                <img src="" alt="" class="person-img-sm" />
-                <img src="" alt="person-img-sm" />
-                <img src="" alt="person-img-sm" />
-                <div class="avtar-count"></div>
+              <div class="text-avtars">
+                <p class="text-md">TOTAL CLAIMS</p>
+                <div class="person-images">
+                  <img src="" alt="" class="person-img-sm" />
+                  <img src="" alt="person-img-sm" />
+                  <img src="" alt="person-img-sm" />
+                  <div class="avtar-count"></div>
+                </div>
               </div>
             </div>
           </section>
