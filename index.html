@@ -4,40 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/57d716799f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <
-    <header class="site-header">
-      <nav class="navbar">
-        <div class="logo-container">
-          <h1 class="logo">SKS Funding</h1>
+    <header class="header">
+      <nav class="navbar flex">
+        <div class="logo-container flex">
+          <i class="fa-solid fa-lg fa-comment"></i>
+          <h2 class="logo">SKS Funding</h2>
         </div>
-        <ul class="nav-buttons" role="list">
-          <li><a href="">NEED HELP</a></li>
+        <ul class="nav-buttons flex" role="list">
+          <li class="help-btn"><a href="">NEED HELP</a></li>
           <li>
-            <button class="nav-item icon"><i></i></button>
+            <i class="fa-regular fa-lg fa-bell bell"></i>
           </li>
-          <li><img src="nav-item profile" alt="" /></li>
+          <li>
+            <img
+              src="./assets/images/profile-2.jpg"
+              alt=""
+              class="nav-item profile"
+            />
+          </li>
         </ul>
       </nav>
-      <div class="person-info">
-        <img src="" alt="profile picture" />
+      <div class="person-info flex">
+        <img
+          src="./assets/images/profile-2.jpg"
+          alt="profile picture"
+          class="rectangle-profile-pic"
+        />
         <div class="person-details">
-          <h1>Hi,Emma good morning👋</h1>
+          <h1>Hi, Emma good morning👋</h1>
           <ul>
-            <li><span class="info-title">Email</span>dburada367@rku.ac.in</li>
-            <li><span class="info-title">Phone</span>+91-84889-97323</li>
-            <li><span class="info-title">Plan</span>500</li>
-            <li><span class="info-title">Joined</span></li>
+            <li class="person-info">
+              <strong>Email - </strong>dburada367@rku.ac.in
+            </li>
+            <li class="person-info">
+              <strong>Phone - </strong>+91-84889-97323
+            </li>
+            <li class="person-info">
+              <strong>Address - </strong>123 Newyork St
+            </li>
+            <li class="person-info"><strong>Plan - </strong>500</li>
+            <li class="person-info">
+              <strong>Joined - </strong>Monday 22nd Feb 2019
+            </li>
           </ul>
         </div>
-        <div class="profile-status">
-          <div class="progress-bar">
-            <div class="pogress title">Profile Completion</div>
+        <di class="profile-status">
+          <div class="progress-circle"></div>
+
+          <div class="progress-text">
+            <h5 class="pogress title">Profile Completion</h5>
             <p>Please complete your profile</p>
             <button class="btn-primary-big">COMPLETE</button>
           </div>
-        </div>
+        </di>
       </div>
     </header>
     <aside>
@@ -48,28 +85,28 @@
         </div>
         <p class="label">COVERED PERSONS</p>
         <div class="persons-container covered-persons">
-          <img src="" alt="" class="person-image" />
-          <img src="" alt="" class="person-image" />
+          <img src="./assets/images/person/1.jpg" alt="" class="person-image" />
+          <img src="./assets/images/person/2.jpg" alt="" class="person-image" />
         </div>
 
         <p class="label">BENIFICIARY PERSONS</p>
         <div class="persons-container beneficiary-persons">
-          <img src="" alt="" class="person-image" />
-          <img src="" alt="" class="person-image" />
+          <img src="./assets/images/person/2.jpg" alt="" class="person-image" />
+          <img src="./assets/images/person/3.jpg" alt="" class="person-image" />
         </div>
 
         <p class="label">EMERGENCY PERSONS</p>
         <div class="persons-container emergency-persons">
-          <img src="" alt="" class="person-image" />
-          <img src="" alt="" class="person-image" />
-          <img src="" alt="" class="person-image" />
-          <img src="" alt="" class="person-image" />
+          <img src="./assets/images/person/1.jpg" alt="" class="person-image" />
+          <img src="./assets/images/person/2.jpg" alt="" class="person-image" />
+          <img src="./assets/images/person/3.jpg" alt="" class="person-image" />
+          <img src="./assets/images/person/4.jpg" alt="" class="person-image" />
         </div>
       </section>
 
       <section class="about-me">
         <div class="aside-heading">
-          <h5 class="aside-title">ABOUT ME</h5>
+          <h class="aside-title">ABOUT ME</h>
           <i class="aside-icon"></i>
         </div>
         <p class="label-sm">EMAIL</p>
@@ -132,6 +169,7 @@
         </section>
 
         <section class="members-section">
+          <!-- CARD 1 -->
           <div class="member-card">
             <img src="" alt="profile image" class="square-profile" />
             <h3 class="text-md bold">AMELIA KIMANI</h3>
@@ -156,6 +194,86 @@
 
             <button class="btn-primary-md">Pay</button>
           </div>
+
+          <!-- CARD 2 -->
+          <div class="member-card">
+            <img src="" alt="profile image" class="square-profile" />
+            <h3 class="text-md bold">GENIEVE JUMA</h3>
+
+            <div class="member-data">
+              <i class="calender"></i>
+              <strong class="label-sm">Feed</strong>
+              <p>Thu Jul 10, 2018 7:30 PM EDT</p>
+            </div>
+
+            <div class="member-data">
+              <i class="grid"></i>
+              <strong class="label-sm">Due</strong>
+              <p>Thu Jul 10, 2018</p>
+            </div>
+
+            <div class="member-data">
+              <i class="location"></i>
+              <strong class="label-sm">Address</strong>
+              <p>Street 157 Gondal</p>
+            </div>
+
+            <button class="btn-primary-md">Pay</button>
+          </div>
+
+          <!-- CARD 3  -->
+
+          <div class="member-card">
+            <img src="" alt="profile image" class="square-profile" />
+            <h3 class="text-md bold">AMELIA KIMANI</h3>
+
+            <div class="member-data">
+              <i class="calender"></i>
+              <strong class="label-sm">Feed</strong>
+              <p>Thu Jul 10, 2018 7:30 PM EDT</p>
+            </div>
+
+            <div class="member-data">
+              <i class="grid"></i>
+              <strong class="label-sm">Due</strong>
+              <p>Thu Jul 10, 2018</p>
+            </div>
+
+            <div class="member-data">
+              <i class="location"></i>
+              <strong class="label-sm">Address</strong>
+              <p>Street 157 Gondal</p>
+            </div>
+
+            <button class="btn-primary-md">Pay</button>
+          </div>
+        </section>
+
+        <section class="activity-section">
+          <h3 class="label">ACTIVITY</h3>
+          <ul class="activity">
+            <li>Claimed 600</li>
+            <li class="act-desc">
+              23 members are got claimed in washington DC
+            </li>
+            <li class="text-tiny">05:40pm</li>
+          </ul>
+          <ul class="activity">
+            <li>3 Claims are waiting</li>
+            <li class="act-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corrupti.
+            </li>
+            <li class="text-tiny">05:40pm</li>
+          </ul>
+          <ul class="activity">
+            <li>102 New Members</li>
+            <li class="act-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corrupti.
+            </li>
+            <li class="text-tiny">05:40pm</li>
+          </ul>
         </section>
       </div>
     </main>
