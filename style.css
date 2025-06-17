@@ -83,6 +83,15 @@ header {
 
 }
 
+header-part::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.759) 30%, transparent 100% 100%);
+    /* opacity: .3; */
+    z-index: 2;
+}
+
 .rectangle-profile-pic {
     background-position: top;
     height: 200px;
@@ -387,11 +396,17 @@ button {
 }
 
 .tabs-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 
+    border-bottom: 3px solid black;
+    padding-left: 20px;
+    border-left: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
 
 .progress-text {
     display: flex;
@@ -466,4 +481,23 @@ button {
     justify-content: space-between;
 }
 
-body {}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.tabs {
+    display: flex;
+    padding: 10px 15px;
+    gap: 94px;
+    grid-column: 3 / -1;
+    width: 100%;
+}
+
+.btn-secondary-md {
+    background-color: #0DD39D;
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 30px 40px;
+}
