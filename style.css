@@ -23,6 +23,10 @@ body {
     display: flex;
 }
 
+.items-center {
+    align-items: center;
+}
+
 .nav-item.profile {
     height: 40px;
     width: 40px;
@@ -638,4 +642,140 @@ aside {
     align-items: center;
     justify-content: center;
     margin-left: -8px;
+}
+
+main>section {
+    display: contents;
+}
+
+
+.member-card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    grid-column: span 8;
+    gap: 20px;
+}
+
+.square-profile {
+    width: 110px;
+    height: 110px;
+    border-radius: 5px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.member-info li {
+    font-size: 14px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 4px;
+}
+
+.member-name {
+    /* color: gray; */
+    font-size: 20px;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+}
+
+.btn-primary-md {
+    flex-basis: 90px;
+    color: white;
+    padding: 6px 0px;
+    background-color: var(--color-1);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    gap: 5px;
+    align-self: end;
+    margin-left: 35px;
+}
+
+.member-card:last-child {
+    height: 150px;
+}
+
+.activity-section {
+    grid-column: 9 / -1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/span 3;
+}
+
+.activity-section::-webkit-scrollbar {
+    width: 4px;
+}
+
+.activity-section::-webkit-scrollbar-thumb {
+    background: var(--color-1);
+    /* yellow scrollbar */
+    border-radius: 10px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.activity {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.activity-title {
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+}
+
+.act-desc {
+    font-size: 13px;
+    color: gray;
+    margin: 3px 0;
+}
+
+.text-tiny {
+    font-size: 12px;
+    color: #888;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.dot.blue {
+    background-color: #28C5FF;
+}
+
+.dot.orange {
+    background-color: #FFA629;
+}
+
+.dot.green {
+    background-color: #0dd39d;
 }
