@@ -5,11 +5,10 @@
 }
 
 :root {
-    --color-1: #fca424;
-    --color-2: #0dd39d;
-    --color-4: #1a1a1a;
-    --color-5: #cdcdcd;
-    --color-6: #fefefe;
+    --yellow: #fca424;
+    --teal: #0dd39d;
+    --black: #1a1a1a;
+
 }
 
 body {
@@ -36,7 +35,7 @@ body {
 }
 
 .bell {
-    color: white;
+    color: whiteite;
 }
 
 nav {
@@ -182,13 +181,6 @@ aside,
     margin: 0px 50px;
 }
 
-:root {
-    --color-1: #fca424;
-    --color-2: #0dd39d;
-    --color-4: #1a1a1a;
-    --color-5: #cdcdcd;
-    --color-6: #fefefe;
-}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -314,11 +306,11 @@ button {
     height: 100px;
 }
 
-.progress-text {
+.progress-content {
     display: flex;
     color: white;
     flex-direction: column;
-    gap: 10px;
+    gap: 21px;
 }
 
 
@@ -346,8 +338,12 @@ button {
 }
 
 
+.progress-desc {
+    font-size: 12px;
+}
+
 .btn-primary-big {
-    background-color: var(--color-1);
+    background-color: var(--yellow);
     border: none;
     padding: 8px 17px;
     color: white;
@@ -369,7 +365,7 @@ button {
     justify-content: space-between;
     width: 100%;
 
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--black);
     padding-left: 20px;
     border-left: 1px solid silver;
     border-bottom: 1px solid silver;
@@ -379,7 +375,11 @@ button {
     display: flex;
     color: white;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+}
+
+.progress-title {
+    font-size: 16px;
 }
 
 .profile-status {
@@ -405,13 +405,13 @@ button {
     rotate: 45deg;
     border-radius: 50%;
     border-top: 5px solid rgba(255, 255, 255, 0.129);
-    border-right: 5px solid var(--color-1);
-    border-bottom: 5px solid var(--color-1);
-    border-left: 5px solid var(--color-1);
+    border-right: 5px solid var(--yellow);
+    border-bottom: 5px solid var(--yellow);
+    border-left: 5px solid var(--yellow);
 }
 
 .btn-primary-big {
-    background-color: var(--color-1);
+    background-color: var(--yellow);
     border: none;
     padding: 8px 17px;
     color: white;
@@ -462,6 +462,25 @@ button {
     width: 100%;
 }
 
+.tabs li::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: var(--yellow);
+    bottom: -12px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.tabs li:hover::after {
+    width: 100%;
+}
+
+.tabs li.active::after {
+    width: 100%;
+}
+
 .btn-secondary-md {
     background-color: #0dd39d;
     border: none;
@@ -483,7 +502,7 @@ button {
     justify-content: space-between;
     width: 100%;
     grid-column: 4 / -1;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--black);
     padding-left: 20px;
     border-left: 1px solid silver;
     border-bottom: 1px solid silver;
@@ -502,7 +521,7 @@ button {
     color: white;
     gap: 5px;
     padding: 8px 0px;
-    background-color: var(--color-2);
+    background-color: var(--teal);
     border: none;
     display: flex;
     align-items: center;
@@ -529,7 +548,7 @@ button {
     content: "";
     width: 100%;
     height: 3px;
-    background-color: var(--color-1);
+    background-color: var(--yellow);
     position: absolute;
     bottom: -12px;
     left: 0;
@@ -645,7 +664,7 @@ aside {
 
 
 .avtar-count {
-    background: var(--color-2);
+    background: var(--teal);
     border-radius: 50%;
     font-size: 12px;
     width: 32px;
@@ -685,7 +704,7 @@ main>section {
 
 .member-card {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     position: relative;
     align-items: center;
@@ -696,8 +715,8 @@ main>section {
 }
 
 .square-profile {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     border-radius: 5px;
     object-fit: cover;
     aspect-ratio: 1;
@@ -709,6 +728,7 @@ main>section {
     width: 100%;
     align-items: center;
     gap: 4px;
+    color: #888;
 }
 
 .member-name {
@@ -723,7 +743,7 @@ main>section {
     flex-basis: 90px;
     color: white;
     padding: 6px 0px;
-    background-color: var(--color-1);
+    background-color: var(--yellow);
     border: none;
     display: flex;
     align-items: center;
@@ -768,7 +788,7 @@ main>section {
 }
 
 .activity-scroll::-webkit-scrollbar-thumb {
-    background-color: var(--color-1);
+    background-color: var(--yellow);
     border-radius: 10px;
 }
 
