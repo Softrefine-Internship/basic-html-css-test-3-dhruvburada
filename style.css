@@ -697,7 +697,7 @@ main>section {
     border-radius: 4px;
     gap: 5px;
     align-self: end;
-    margin-left: 35px;
+    margin-left: auto;
 }
 
 .member-card:last-child {
@@ -716,10 +716,15 @@ main>section {
     display: flex;
     flex-direction: column;
     grid-row: 2/span 3;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
 }
 
 .activity-section::-webkit-scrollbar {
-    width: 4px;
+    width: 3px;
+    height: 6px;
 }
 
 .activity-section::-webkit-scrollbar-thumb {
