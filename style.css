@@ -5,21 +5,19 @@
 }
 
 :root {
-    --color-1: #FCA424;
-    --color-2: #0DD39D;
-    --color-4: #1A1A1A;
-    --color-5: #CDCDCD;
-    --color-6: #FEFEFE;
+    --color-1: #fca424;
+    --color-2: #0dd39d;
+    --color-4: #1a1a1a;
+    --color-5: #cdcdcd;
+    --color-6: #fefefe;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    color: #1A1A1A;
+    font-variation-settings: "wdth" 100;
+    color: #1a1a1a;
 }
-
 
 .flex {
     display: flex;
@@ -38,18 +36,16 @@ body {
 }
 
 nav {
-
     justify-content: space-between;
     align-items: center;
     padding: 25px 20px;
-
+    margin-right: 38px;
 }
 
 .nav-buttons {
     display: flex;
     gap: 20px;
     align-items: center;
-
 }
 
 ul {
@@ -60,7 +56,6 @@ ul {
 ul a {
     text-decoration: none;
     color: inherit;
-
 }
 
 .help-btn {
@@ -75,19 +70,21 @@ ul a {
 
 header {
     min-height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/steptodown.com158686.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./assets/images/steptodown.com158686.jpg");
     background-size: cover;
     background-position: top;
     padding: 10px;
     position: relative;
-
 }
 
 header-part::before {
     content: "";
     inset: 0;
     position: absolute;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.759) 30%, transparent 100% 100%);
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.759) 30%,
+            transparent 100% 100%);
     /* opacity: .3; */
     z-index: 2;
 }
@@ -107,29 +104,30 @@ header-part::before {
 }
 
 .person-details {
-    margin-left: 300px;
+    color: #fefefe;
+    margin-top: 30px;
+    margin-left: 238px;
+}
+
+.person-profile {
+    display: flex;
+    gap: 50px;
 }
 
 .logo-container {
-
     gap: 10px;
     align-items: center;
 }
 
 i.fa-solid.fa-comment {
     color: white;
-
 }
 
 .logo {
-    color: #FEFEFE;
+    color: #fefefe;
     line-height: 1.5;
 }
 
-.person-details {
-    color: #FEFEFE;
-    margin-top: 30px;
-}
 
 h1 {
     font-size: 2rem;
@@ -153,7 +151,7 @@ button {
     margin: 0px;
     box-sizing: border-box;
     font-family: Inter, sans-serif;
-    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     font-variation-settings: normal;
     list-style: outside none none;
 }
@@ -173,7 +171,6 @@ aside,
     box-sizing: border-box;
 }
 
-main,
 aside,
 .tabs-container {
     width: 100%;
@@ -182,21 +179,19 @@ aside,
 }
 
 :root {
-    --color-1: #FCA424;
-    --color-2: #0DD39D;
-    --color-4: #1A1A1A;
-    --color-5: #CDCDCD;
-    --color-6: #FEFEFE;
+    --color-1: #fca424;
+    --color-2: #0dd39d;
+    --color-4: #1a1a1a;
+    --color-5: #cdcdcd;
+    --color-6: #fefefe;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    color: #1A1A1A;
+    font-variation-settings: "wdth" 100;
+    color: #1a1a1a;
 }
-
 
 .flex {
     display: flex;
@@ -215,18 +210,15 @@ body {
 }
 
 nav {
-
     justify-content: space-between;
     align-items: center;
     padding: 25px 20px;
-
 }
 
 .nav-buttons {
     display: flex;
     gap: 20px;
     align-items: center;
-
 }
 
 ul {
@@ -237,7 +229,6 @@ ul {
 ul a {
     text-decoration: none;
     color: inherit;
-
 }
 
 .help-btn {
@@ -252,12 +243,12 @@ ul a {
 
 header {
     min-height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/steptodown.com158686.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./assets/images/steptodown.com158686.jpg");
     background-size: cover;
     background-position: top;
     padding: 10px;
     position: relative;
-
 }
 
 .rectangle-profile-pic {
@@ -274,29 +265,15 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.person-details {
-    margin-left: 300px;
-}
 
-.logo-container {
-
-    gap: 10px;
-    align-items: center;
-}
 
 i.fa-solid.fa-comment {
     color: white;
-
 }
 
 .logo {
-    color: #FEFEFE;
+    color: #fefefe;
     line-height: 1.5;
-}
-
-.person-details {
-    color: #FEFEFE;
-    margin-top: 30px;
 }
 
 h1 {
@@ -321,7 +298,7 @@ button {
     margin: 0px;
     box-sizing: border-box;
     font-family: Inter, sans-serif;
-    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     font-variation-settings: normal;
     list-style: outside none none;
 }
@@ -333,20 +310,11 @@ button {
     height: 100px;
 }
 
-
-
 .progress-text {
     display: flex;
     color: white;
     flex-direction: column;
     gap: 10px;
-}
-
-.profile-status {
-    z-index: 20;
-    margin-right: 50px;
-    position: relative;
-    height: fit-content;
 }
 
 
@@ -373,20 +341,6 @@ button {
     border-radius: 50%;
 }
 
-.progress-circle::after {
-    content: "";
-    height: 89px;
-    width: 89px;
-    background-color: transparent;
-    position: absolute;
-    inset: 0;
-    rotate: 45deg;
-    border-radius: 50%;
-    border-top: 5px solid rgba(255, 255, 255, 0.129);
-    border-right: 5px solid var(--color-1);
-    border-bottom: 5px solid var(--color-1);
-    border-left: 5px solid var(--color-1);
-}
 
 .btn-primary-big {
     background-color: var(--color-1);
@@ -400,7 +354,6 @@ button {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-
 }
 
 .tabs-container {
@@ -425,11 +378,9 @@ button {
 
 .profile-status {
     z-index: 20;
-    margin-right: 50px;
     position: relative;
     height: fit-content;
 }
-
 
 .progress-circle {
     position: relative;
@@ -437,22 +388,6 @@ button {
     height: 100px;
 }
 
-.progress-circle::before {
-    content: "75%";
-    font-family: "JetBrains Mono", monospace;
-    font-size: 20px;
-    height: 65px;
-    width: 65px;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    justify-content: center;
-    top: 17px;
-    left: 17px;
-    background-color: rgba(255, 255, 255, 0.129);
-    position: absolute;
-    border-radius: 50%;
-}
 
 .progress-circle::after {
     content: "";
@@ -477,16 +412,35 @@ button {
     margin-top: 8px;
 }
 
+.camera-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.camera-icon {
+    margin-top: 10px;
+}
+
+.camera-icon i {
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer !important;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.134);
+}
+
 .person-image {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-
 }
 
 .person-info {
     align-items: center;
     justify-content: space-between;
+    margin: 0 50px;
 }
 
 .grid-container {
@@ -503,7 +457,7 @@ button {
 }
 
 .btn-secondary-md {
-    background-color: #0DD39D;
+    background-color: #0dd39d;
     border: none;
     color: white;
     font-weight: 500;
@@ -562,12 +516,12 @@ button {
 }
 
 .active {
-    color: #1A1A1A !important;
+    color: #1a1a1a !important;
 }
 
 aside {
     grid-column: 1 / 4;
-    padding-right: 20px;
+    padding-right: 80px;
 }
 
 .aside-heading {
@@ -579,10 +533,8 @@ aside {
 
 .aside-title {
     font-weight: 400;
-    color: #1A1A1A;
+    color: #1a1a1a;
 }
-
-
 
 .label {
     color: gray;
@@ -600,10 +552,12 @@ aside {
 }
 
 .status-section {
+    display: contents;
     grid-column: 4/-1;
 }
 
 .status-card {
+
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 20px;
     display: flex;
@@ -611,6 +565,7 @@ aside {
     align-items: center;
     background-color: white;
     border-radius: 5px;
+
 }
 
 .person-img-sm {
@@ -621,6 +576,17 @@ aside {
 
 .text-big {
     font-size: 4rem;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 300;
+    padding-right: 20px;
+}
+
+.text-md {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
 }
 
 .status-card {
@@ -634,4 +600,42 @@ main {
     padding-top: 30px;
     padding-left: 20px;
     grid-template-columns: repeat(12, 1fr);
+    border-left: 1px solid silver;
+    grid-column: 4/-1;
+    padding-right: clamp(1rem, 1vw, 3rem);
+}
+
+
+aside {
+    padding-right: 65px;
+}
+
+.person-images img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -8px;
+}
+
+.text-avtars {
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid silver;
+}
+
+
+
+.avtar-count {
+    background: var(--color-2);
+    border-radius: 50%;
+    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -8px;
 }

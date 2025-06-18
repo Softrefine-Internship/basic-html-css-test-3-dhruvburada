@@ -34,7 +34,7 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+
     <header class="header">
       <nav class="navbar flex">
         <div class="logo-container flex">
@@ -56,38 +56,45 @@
         </ul>
       </nav>
       <div class="person-info flex">
-        <img
-          src="./assets/images/profile-2.jpg"
-          alt="profile picture"
-          class="rectangle-profile-pic"
-        />
-        <div class="person-details">
-          <h1>Hi, Emma good morning👋</h1>
-          <ul>
-            <li class="person-info">
-              <strong>Email - </strong>dburada367@rku.ac.in
-            </li>
-            <li class="person-info">
-              <strong>Phone - </strong>+91-84889-97323
-            </li>
-            <li class="person-info">
-              <strong>Address - </strong>123 Newyork St
-            </li>
-            <li class="person-info"><strong>Plan - </strong>500</li>
-            <li class="person-info">
-              <strong>Joined - </strong>Monday 22nd Feb 2019
-            </li>
-          </ul>
-        </div>
-        <di class="profile-status">
-          <div class="progress-circle"></div>
-
-          <div class="progress-text">
-            <h5 class="pogress title">Profile Completion</h5>
-            <p>Please complete your profile</p>
-            <button class="btn-primary-big">COMPLETE</button>
+        <div class="person-profile">
+          <img
+            src="./assets/images/profile-2.jpg"
+            alt="profile picture"
+            class="rectangle-profile-pic"
+          />
+          <div class="person-details">
+            <h1>Hi, Emma good morning👋</h1>
+            <ul>
+              <li>
+                <strong>Email - </strong>dburada367@rku.ac.in
+              </li>
+              <li >
+                <strong>Phone - </strong>+91-84889-97323
+              </li>
+              <li >
+                <strong>Address - </strong>123 Newyork St
+              </li>
+              <li><strong>Plan - </strong>500</li>
+              <li>
+                <strong>Joined - </strong>Monday 22nd Feb 2019
+              </li>
+            </ul>
           </div>
-        </di>
+        </div>
+        <div class="progress-container">
+          <div class="profile-status">
+            <div class="progress-circle"></div>
+
+            <div class="progress-text">
+              <h5 class="pogress title">Profile Completion</h5>
+              <p>Please complete your profile</p>
+              <button class="btn-primary-big">COMPLETE</button>
+            </div>
+          </div>
+          <div class="camera-icon">
+            <i class="ph ph-camera"></i>
+          </div>
+        </div>
       </div>
     </header>
     <div class="tab-container">
@@ -182,159 +189,163 @@
         </section>
       </aside>
 
-      <main>
-        <div class="main-content">
-          <section class="status-section">
-            <div class="status-card">
-              <h2 class="text-big">23</h2>
-              <div class="line"></div>
-              <p class="text-md">NEW CLAIMS</p>
-              <div class="person-images">
-                <img
-                  src="./assets/images/person/1.jpg"
-                  alt=""
-                  class="person-img-sm"
-                />
-                <img src="./assets/images/person/2.jpg" class="person-img-sm" />
-                <img src="./assets/images/person/3.jpg" class="person-img-sm" />
-                <div class="avtar-count"></div>
+
+
+    <main>
+
+        <section class="status-section">
+          <div class="status-card">
+            <h2 class="text-big">23</h2>
+            <div class="text-avtars">
+            <p class="text-md">NEW CLAIMS</p>
+            <div class="person-images flex">
+              <img
+                src="./assets/images/person/1.jpg"
+                alt=""
+                class="person-img-sm"
+              />
+              <img src="./assets/images/person/2.jpg" class="person-img-sm" />
+              <img src="./assets/images/person/3.jpg" class="person-img-sm" />
+              <div class="avtar-count">+32</div>
+            </div>
+          </div>
+          </div>
+
+          <div class="status-card">
+            <h2 class="text-big">76</h2>
+            <div class="text-avtars">
+            <p class="text-md">NEW MEMBERS</p>
+            <div class="person-images flex">
+              <img src="./assets/images/person/3.jpg" alt="" class="person-img-sm" />
+              <img src="./assets/images/person/2.jpg" alt="person-img-sm" />
+              <img src="./assets/images/person/1.jpg" alt="person-img-sm" />
+              <div class="avtar-count">+32</div>
+            </div>
+          </div>
+          </div>
+
+          <div class="status-card">
+            <h2 class="text-big">102</h2>
+            <div class="text-avtars">
+              <p class="text-md">TOTAL CLAIMS</p>
+              <div class="person-images flex">
+                <img src="./assets/images/person/4.jpg" alt="" class="person-img-sm" />
+                <img src="./assets/images/person/1.jpg" alt="person-img-sm" />
+                <img src="./assets/images/person/3.jpg" alt="person-img-sm" />
+                <div class="avtar-count">+32</div>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div class="status-card">
-              <h2 class="text-big">76</h2>
-              <p class="text-md">NEW MEMBERS</p>
-              <div class="person-images">
-                <img src="" alt="" class="person-img-sm" />
-                <img src="" alt="person-img-sm" />
-                <img src="" alt="person-img-sm" />
-                <div class="avtar-count"></div>
-              </div>
+        <section class="members-section">
+          <!-- CARD 1 -->
+          <div class="member-card">
+            <img src="" alt="profile image" class="square-profile" />
+            <h3 class="text-md bold">AMELIA KIMANI</h3>
+
+            <div class="member-data">
+              <i class="calender"></i>
+              <strong class="label-sm">Feed</strong>
+              <p>Thu Jul 10, 2018 7:30 PM EDT</p>
             </div>
 
-            <div class="status-card">
-              <h2 class="text-big">102</h2>
-              <div class="text-avtars">
-                <p class="text-md">TOTAL CLAIMS</p>
-                <div class="person-images">
-                  <img src="" alt="" class="person-img-sm" />
-                  <img src="" alt="person-img-sm" />
-                  <img src="" alt="person-img-sm" />
-                  <div class="avtar-count"></div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="members-section">
-            <!-- CARD 1 -->
-            <div class="member-card">
-              <img src="" alt="profile image" class="square-profile" />
-              <h3 class="text-md bold">AMELIA KIMANI</h3>
-
-              <div class="member-data">
-                <i class="calender"></i>
-                <strong class="label-sm">Feed</strong>
-                <p>Thu Jul 10, 2018 7:30 PM EDT</p>
-              </div>
-
-              <div class="member-data">
-                <i class="grid"></i>
-                <strong class="label-sm">Due</strong>
-                <p>Thu Jul 10, 2018</p>
-              </div>
-
-              <div class="member-data">
-                <i class="location"></i>
-                <strong class="label-sm">Address</strong>
-                <p>Street 157 Gondal</p>
-              </div>
-
-              <button class="btn-primary-md">Pay</button>
+            <div class="member-data">
+              <i class="grid"></i>
+              <strong class="label-sm">Due</strong>
+              <p>Thu Jul 10, 2018</p>
             </div>
 
-            <!-- CARD 2 -->
-            <div class="member-card">
-              <img src="" alt="profile image" class="square-profile" />
-              <h3 class="text-md bold">GENIEVE JUMA</h3>
-
-              <div class="member-data">
-                <i class="calender"></i>
-                <strong class="label-sm">Feed</strong>
-                <p>Thu Jul 10, 2018 7:30 PM EDT</p>
-              </div>
-
-              <div class="member-data">
-                <i class="grid"></i>
-                <strong class="label-sm">Due</strong>
-                <p>Thu Jul 10, 2018</p>
-              </div>
-
-              <div class="member-data">
-                <i class="location"></i>
-                <strong class="label-sm">Address</strong>
-                <p>Street 157 Gondal</p>
-              </div>
-
-              <button class="btn-primary-md">Pay</button>
+            <div class="member-data">
+              <i class="location"></i>
+              <strong class="label-sm">Address</strong>
+              <p>Street 157 Gondal</p>
             </div>
 
-            <!-- CARD 3  -->
+            <button class="btn-primary-md">Pay</button>
+          </div>
 
-            <div class="member-card">
-              <img src="" alt="profile image" class="square-profile" />
-              <h3 class="text-md bold">AMELIA KIMANI</h3>
+          <!-- CARD 2 -->
+          <div class="member-card">
+            <img src="" alt="profile image" class="square-profile" />
+            <h3 class="text-md bold">GENIEVE JUMA</h3>
 
-              <div class="member-data">
-                <i class="calender"></i>
-                <strong class="label-sm">Feed</strong>
-                <p>Thu Jul 10, 2018 7:30 PM EDT</p>
-              </div>
-
-              <div class="member-data">
-                <i class="grid"></i>
-                <strong class="label-sm">Due</strong>
-                <p>Thu Jul 10, 2018</p>
-              </div>
-
-              <div class="member-data">
-                <i class="location"></i>
-                <strong class="label-sm">Address</strong>
-                <p>Street 157 Gondal</p>
-              </div>
-
-              <button class="btn-primary-md">Pay</button>
+            <div class="member-data">
+              <i class="calender"></i>
+              <strong class="label-sm">Feed</strong>
+              <p>Thu Jul 10, 2018 7:30 PM EDT</p>
             </div>
-          </section>
 
-          <section class="activity-section">
-            <h3 class="label">ACTIVITY</h3>
-            <ul class="activity">
-              <li>Claimed 600</li>
-              <li class="act-desc">
-                23 members are got claimed in washington DC
-              </li>
-              <li class="text-tiny">05:40pm</li>
-            </ul>
-            <ul class="activity">
-              <li>3 Claims are waiting</li>
-              <li class="act-desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corrupti.
-              </li>
-              <li class="text-tiny">05:40pm</li>
-            </ul>
-            <ul class="activity">
-              <li>102 New Members</li>
-              <li class="act-desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corrupti.
-              </li>
-              <li class="text-tiny">05:40pm</li>
-            </ul>
-          </section>
-        </div>
-      </main>
-    </div>
+            <div class="member-data">
+              <i class="grid"></i>
+              <strong class="label-sm">Due</strong>
+              <p>Thu Jul 10, 2018</p>
+            </div>
+
+            <div class="member-data">
+              <i class="location"></i>
+              <strong class="label-sm">Address</strong>
+              <p>Street 157 Gondal</p>
+            </div>
+
+            <button class="btn-primary-md">Pay</button>
+          </div>
+
+          <!-- CARD 3  -->
+
+          <div class="member-card">
+            <img src="" alt="profile image" class="square-profile" />
+            <h3 class="text-md bold">AMELIA KIMANI</h3>
+
+            <div class="member-data">
+              <i class="calender"></i>
+              <strong class="label-sm">Feed</strong>
+              <p>Thu Jul 10, 2018 7:30 PM EDT</p>
+            </div>
+
+            <div class="member-data">
+              <i class="grid"></i>
+              <strong class="label-sm">Due</strong>
+              <p>Thu Jul 10, 2018</p>
+            </div>
+
+            <div class="member-data">
+              <i class="location"></i>
+              <strong class="label-sm">Address</strong>
+              <p>Street 157 Gondal</p>
+            </div>
+
+            <button class="btn-primary-md">Pay</button>
+          </div>
+        </section>
+
+        <section class="activity-section">
+          <h3 class="label">ACTIVITY</h3>
+          <ul class="activity">
+            <li>Claimed 600</li>
+            <li class="act-desc">
+              23 members are got claimed in washington DC
+            </li>
+            <li class="text-tiny">05:40pm</li>
+          </ul>
+          <ul class="activity">
+            <li>3 Claims are waiting</li>
+            <li class="act-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corrupti.
+            </li>
+            <li class="text-tiny">05:40pm</li>
+          </ul>
+          <ul class="activity">
+            <li>102 New Members</li>
+            <li class="act-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corrupti.
+            </li>
+            <li class="text-tiny">05:40pm</li>
+          </ul>
+        </section>
+    </main>
+  </div>
   </body>
 </html>
