@@ -517,7 +517,7 @@ h5.pogress-title {
 .tabs ul {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 27px;
     width: 100%;
 }
 
@@ -532,6 +532,7 @@ h5.pogress-title {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    margin-right: 50px;
 }
 
 .tabs ul li {
@@ -597,7 +598,10 @@ aside {
 }
 
 .status-card {
-
+    flex: 1 1 280px;
+    /* grow, shrink, min width */
+    max-width: 100%;
+    min-width: 250px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 20px;
     display: flex;
@@ -642,12 +646,18 @@ main {
     grid-template-columns: repeat(12, 1fr);
     border-left: 1px solid silver;
     grid-column: 4/-1;
-    padding-right: clamp(1rem, 1vw, 3rem);
+    padding-right: 40px;
 }
 
 
 aside {
     padding-right: 65px;
+}
+
+.person-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
 }
 
 .person-images img {
@@ -668,17 +678,6 @@ aside {
 
 
 
-.avtar-count {
-    background: var(--teal);
-    border-radius: 50%;
-    font-size: 12px;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -8px;
-}
 
 .avtar-count {
     width: 32px;
